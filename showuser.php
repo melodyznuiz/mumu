@@ -21,7 +21,7 @@ if ($API->connect('10.0.111.1', 'admin', '')) {
   
    foreach ($ARRAY as $value) {
    	echo $value['user'];
-   	echo "<a href='remove.php?name=".$value['.id']."'>Kick</a>";
+   	echo "<a href='remove.php?name=".$value['.id']."'>Kick..</a>";
    	
 
    }

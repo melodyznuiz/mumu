@@ -1,3 +1,3 @@
 <?php
-echo 'Kick Complete';
+echo 'Kick Compl..te';
 ?>
