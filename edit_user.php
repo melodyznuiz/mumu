@@ -13,6 +13,14 @@ if ($API->connect('10.0.111.1', 'admin', '')) {
     $email1 = $_POST ['e_mail'];
     $id1 = $_POST ['p_id'];
 
+    //$API->write('/ip/hotspot/user/print');
+
+        //$READ1 = $API->read(false);
+        //$ARRAY1 = $API->parseResponse($READ1);
+
+        //print_r($ARRAY1);
+
+
     $API->write('/ip/hotspot/user/add',false);
      $API->write("=name=" . $name1, false);
      $API->write("=password=" . $password1, false);
@@ -30,6 +38,13 @@ if ($API->connect('10.0.111.1', 'admin', '')) {
        echo $_POST['pass']."</br>";
        echo $_POST['e_mail']."</br>";
        echo $_POST['p_id']."</br>";
+       echo "<a href='create_user.php'>return</a>";
+
+
+       //foreach ($ARRAY1 as $value) {
+    //echo $value['name'];
+    //echo "<a href='edit.php?name=".$value['.id']."'>edit</a>"."</br>";
+        //}
    }else {
        echo "error</br>";
        echo "<a href='create_user.php'>return</a>";

@@ -19,12 +19,12 @@ if ($API->connect('10.0.111.1', 'admin', '')) {
    
    //print_r($ARRAY);
   
-   foreach ($ARRAY as $value) {
-   	echo $value['user'];
-   	echo "<a href='remove.php?name=".$value['.id']."'>Kick</a>";
+   //foreach ($ARRAY as $value) {
+   	//echo $value['user'];
+   	//echo "<a href='remove.php?name=".$value['.id']."'>Kick</a>";
    	
 
-   }
+   //}
 
 
 
@@ -48,5 +48,6 @@ if ($API->connect('10.0.111.1', 'admin', '')) {
             Personal-ID : <input type="text" name="p_id" size="20" /><br>
             <input type="submit" value="submit">
         </form>
+        <a href='edit.php'>edit</a>
     </body>
 </html>
